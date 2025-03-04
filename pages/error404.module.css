@@ -1,0 +1,118 @@
+/* 404 Page Styles */
+.notFoundPage {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .notFoundPage.darkMode {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    color: #ffffff;
+  }
+  
+  .notFoundContent {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .notFoundContent h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+  }
+  
+  .memeContainer {
+    margin-bottom: 20px;
+  }
+  
+  .memeImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .memeMessage {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: inherit;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .refreshButton,
+  .homeButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .refreshButton {
+    background-color: #2563eb;
+    color: #ffffff;
+  }
+  
+  .refreshButton:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  .homeButton {
+    background-color: #ff6f61;
+    color: #ffffff;
+  }
+  
+  .homeButton:hover {
+    background-color: #ff3b2f;
+    transform: scale(1.05);
+  }
+  
+  .tip {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  /* Glitch Effect */
+  .glitchEffect {
+    animation: glitch 0.5s infinite;
+  }
+  
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(2px, -2px);
+    }
+    60% {
+      transform: translate(-2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }

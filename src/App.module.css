@@ -1,0 +1,1081 @@
+/* HomePage Styles */
+.homePage {
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .homePage.darkMode {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    color: #ffffff;
+  }
+  
+  .heroSection {
+    text-align: center;
+    padding: 100px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    margin: 20px;
+  }
+  
+  .heroSection h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: inherit;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .heroSection p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: inherit;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .exploreButton {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .exploreButton:hover {
+    background-color: #ff3b2f;
+    transform: scale(1.05);
+  }
+  
+  .trendingSection {
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    margin: 20px;
+  }
+  
+  .trendingSection h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: inherit;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .memeContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .memeCard {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .memeCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .memeCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .memeCard h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: inherit;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .memeCard p {
+    font-size: 1.1rem;
+    color: inherit;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: inherit;
+  }
+  
+  .darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .darkModeToggle:hover {
+    background-color: #ff3b2f;
+    transform: scale(1.05);
+  }
+ /* Meme Explorer Page Styles */
+.memeExplorer {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.memeExplorer.darkMode {
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #ffffff;
+}
+
+/* Filters and Search */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filterDropdown,
+.searchInput {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: inherit;
+}
+
+.searchInput {
+  flex: 1;
+}
+
+/* Meme Grid */
+.memeContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.memeCard {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.memeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.memeCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.memeCard h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: inherit;
+}
+
+.memeCard p {
+  font-size: 0.875rem;
+  color: inherit;
+}
+
+.loading {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+/* Dark Mode Toggle Button */
+.darkModeToggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.darkModeToggle:hover {
+  background-color: #ff3b2f;
+  transform: scale(1.05);
+}
+
+.memeExplorer.darkMode .darkModeToggle {
+  background-color: #1d4ed8;
+}
+
+.memeExplorer.darkMode .darkModeToggle:hover {
+  background-color: #1e40af;
+}
+
+ /* Meme Upload Page Styles */
+.memeUpload {
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .memeUpload.darkMode {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    color: #ffffff;
+  }
+  
+  .uploadForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: inherit;
+  }
+  
+  .fileInput,
+  .captionInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: inherit;
+  }
+  
+  .captionInput {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .aiCaptionButton {
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .aiCaptionButton:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  .aiCaption {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: inherit;
+  }
+  
+  .previewSection {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .previewImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .previewCaption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: inherit;
+  }
+  
+  .uploadButton {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+/* Upload Button Hover */
+.uploadButton:hover {
+    background-color: #ff3b2f;
+    transform: scale(1.05);
+}
+  /* Back Button Styles */
+  .backButton {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .backButton:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  /* Dark Mode Toggle Button */
+  .darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .darkModeToggle:hover {
+    background-color: #ff3b2f;
+    transform: scale(1.05);
+  }
+  
+  .memeUpload.darkMode .darkModeToggle {
+    background-color: #1d4ed8;
+  }
+  
+  .memeUpload.darkMode .darkModeToggle:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Back Button Styles */
+  .backButton {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .backButton:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  /* Dark Mode Toggle Button */
+  .darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .darkModeToggle:hover {
+    background-color: #ff3b2f;
+    transform: scale(1.05);
+  }
+  
+  .memeUpload.darkMode .darkModeToggle {
+    background-color: #1d4ed8;
+  }
+  
+  .memeUpload.darkMode .darkModeToggle:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Dark Mode Toggle Button */
+  .darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .darkModeToggle:hover {
+    background-color: #ff3b2f;
+    transform: scale(1.05);
+  }
+  
+  .memeUpload.darkMode .darkModeToggle {
+    background-color: #1d4ed8;
+  }
+  
+  .memeUpload.darkMode .darkModeToggle:hover {
+    background-color: #1e40af;
+  }
+
+/* Back Button Styles */
+.backButton {
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .backButton:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+
+ /* Meme Details Page Styles */
+.memeDetails {
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .memeDetails.darkMode {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    color: #ffffff;
+  }
+  
+  .memeImageContainer {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .memeImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .likeSection {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .likeButton {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .likeButton:hover {
+    background-color: #ff3b2f;
+    transform: scale(1.05);
+  }
+  
+  .commentSection {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .commentForm {
+    margin-bottom: 20px;
+  }
+  
+  .commentInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: inherit;
+    resize: vertical;
+  }
+  
+  .commentButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .commentButton:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  .commentList {
+    margin-top: 20px;
+  }
+  
+  .comment {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .comment p {
+    margin: 0;
+    color: inherit;
+  }
+  
+  /* Back Button Styles */
+  .backButton {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .backButton:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  /* Dark Mode Toggle Button */
+  .darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .darkModeToggle:hover {
+    background-color: #ff3b2f;
+    transform: scale(1.05);
+  }
+  
+  .memeDetails.darkMode .darkModeToggle {
+    background-color: #1d4ed8;
+  }
+  
+  .memeDetails.darkMode .darkModeToggle:hover {
+    background-color: #1e40af;
+  }
+
+  /* Profile Button Styles */
+.profileButton {
+  position: fixed;
+  top: 20px;
+  right: 20px; 
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+.profileButton:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* Dark Mode Styles for Profile Button */
+.darkMode .profileButton {
+  background-color: #1d4ed8;
+}
+
+.darkMode .profileButton:hover {
+  background-color: #1e40af;
+}
+
+  /* Dark Mode Toggle Button */
+  .darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .darkModeToggle:hover {
+    background-color: #ff3b2f;
+    transform: scale(1.05);
+  }
+  /* User Profile Page Styles */
+.userProfile {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.userProfile.darkMode {
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #ffffff;
+}
+
+.profileInfo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profilePicture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.editButton {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.editButton:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.uploadedMemes,
+.likedMemes {
+  margin-bottom: 40px;
+}
+
+.memeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.memeCard {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.memeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.memeCard img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.memeCard p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: inherit;
+}
+
+/* Modal Styles */
+.modal {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal h2 {
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.saveButton,
+.cancelButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.saveButton {
+  background-color: #2563eb;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.saveButton:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.cancelButton {
+  background-color: #ff6f61;
+  color: #ffffff;
+}
+
+.cancelButton:hover {
+  background-color: #ff3b2f;
+  transform: scale(1.05);
+}
+
+
+
+
+/* Leaderboard Page Styles */
+.leaderboardPage {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.leaderboardPage.darkMode {
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #ffffff;
+}
+
+.leaderboardPage h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Leaderboard List */
+.leaderboardList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Leaderboard Item */
+.leaderboardItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.leaderboardItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.rank {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 16px;
+  color: inherit;
+}
+
+.memeImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.memeDetails {
+  flex: 1;
+}
+
+.memeDetails h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: inherit;
+}
+
+.memeDetails p {
+  font-size: 1rem;
+  margin: 0;
+  color: inherit;
+}
+
+/* Back Button */
+.backButton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.backButton:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* Leaderboard Button Styles */
+.leaderboardButton {
+  position: fixed;
+  top: 20px;
+  right: 220px; 
+  padding: 10px 20px;
+  background-color: #ff6f61; 
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 1000; 
+}
+
+.leaderboardButton:hover {
+  background-color: #ff3b2f; 
+  transform: scale(1.05);
+}
+
+/* Dark Mode Styles for Leaderboard Button */
+.darkMode .leaderboardButton {
+  background-color: #ff3b2f;
+}
+
+.darkMode .leaderboardButton:hover {
+  background-color: #e62e22;
+}
+/* Leaderboard Page Styles */
+.leaderboardPage {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.leaderboardPage.darkMode {
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #ffffff;
+}
+
+.leaderboardPage h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+
+/* Dark Mode Styles for Home Button */
+.darkMode .homeButton {
+  background-color: #1d4ed8;
+}
+
+.darkMode .homeButton:hover {
+  background-color: #1e40af;
+}
+
+/* Dark Mode Styles for Home Button */
+.darkMode .homeButton {
+  background-color: #1d4ed8;
+}
+
+.darkMode .homeButton:hover {
+  background-color: #1e40af;
+}
+
+/* Leaderboard List */
+.leaderboardList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Leaderboard Item */
+.leaderboardItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.leaderboardItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.rank {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 16px;
+  color: inherit;
+}
+
+.memeImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.memeDetails {
+  flex: 1;
+}
+
+.memeDetails h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: inherit;
+}
+
+.memeDetails p {
+  font-size: 1rem;
+  margin: 0;
+  color: inherit;
+}
+
